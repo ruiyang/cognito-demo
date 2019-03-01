@@ -6,6 +6,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 Auth.configure({
+  authenticationFlowType: "USER_SRP_AUTH",
+  mandatorySignIn: true,
+  region: "",
+  userPoolId: "",
+  userPoolWebClientId: "",
 })
 
 ReactDOM.render(<App />, document.getElementById('root'));
